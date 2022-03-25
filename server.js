@@ -2,12 +2,7 @@ const http = require('http')
 const errorHandle = require('./errorHandle')
 const { v4: uuidv4} = require('uuid')
 
-const todos = [
-    {
-        'title':'hi',
-        'id':uuidv4()
-    }
-]
+const todos = []
 
 const requestListener = (req,res) => {
     const headers = {
